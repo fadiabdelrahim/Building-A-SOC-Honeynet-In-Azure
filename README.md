@@ -1,4 +1,4 @@
-# Building A SOC + Honeynet In Azure (Live Traffic)
+# <p align="center"> Building A SOC + Honeynet In Azure (Live Traffic)
 
 ## Introduction
 In this project, I set up a mini honeynet on Azure and directed log sources from various resources into a Log Analytics workspace. This workspace was then leveraged by Microsoft Sentinel to generate attack maps, trigger alerts, and create incidents. I initially recorded security metrics in the unsecured environment over a 24-hour period, implemented security controls to reinforce the environment, and then captured metrics for an additional 24 hours. The following metrics are highlighted:
@@ -32,8 +32,9 @@ For the "AFTER" metrics, the Network Security Groups were significantly tightene
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2024-08-23 21:22:46
-Stop Time 2024-08-24 21:22:46
+
+***Start Time:*** 2024-08-23 21:22:46</br>
+***Stop Time:*** 2024-08-24 21:22:46
 
 | Metric                   | Count
 | ------------------------ | -----
@@ -49,8 +50,9 @@ All map queries actually returned no results due to no instances of malicious ac
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2024-08-28 02:37:36
-Stop Time	2024-08-29 02:37:36
+
+***Start Time:*** 2024-08-28 02:37:36</br>
+***Stop Time:***	2024-08-29 02:37:36
 
 | Metric                   | Count
 | ------------------------ | -----
