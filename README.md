@@ -1,5 +1,7 @@
 # <p align="center"> Building A SOC + Honeynet In Azure (Live Traffic)
 
+<p align="center"><img src="images/Cloud Honeynet + SOC.png"></p>
+
 ## Introduction
 In this project, I set up a mini honeynet on Azure and directed log sources from various resources into a Log Analytics workspace. This workspace was then leveraged by Microsoft Sentinel to generate attack maps, trigger alerts, and create incidents. I initially recorded security metrics in the unsecured environment over a 24-hour period, implemented security controls to reinforce the environment, and then captured metrics for an additional 24 hours. The following metrics are highlighted:
 
@@ -11,7 +13,11 @@ In this project, I set up a mini honeynet on Azure and directed log sources from
 
 ## Architecture Before Hardening / Security Controls
 
+<p align="center"><img src="images/Architecture Before Hardening _ Security Controls.png"></p>
+
 ## Architecture After Hardening / Security Controls
+
+<p align="center"><img src="images/Architecture After Hardening _ Security Controls.png"></p>
 
 The architecture of the mini honeynet in Azure consists of the following components:
 
@@ -28,6 +34,12 @@ For the "BEFORE" metrics, all resources were initially deployed and exposed dire
 For the "AFTER" metrics, the Network Security Groups were significantly tightened, blocking ALL traffic except for access from my admin workstation. Additionally, all other resources were secured using their built-in firewalls and protected by Private Endpoints.
 
 ## Attack Maps Before Hardening / Security Controls
+
+<p align="center"><img src="images/(Before)24hr-nsg-malicious-allowed-in - Microsoft Azure.png"></p>
+
+<p align="center"><img src="images/(Before)24hr-linux-ssh-auth-fail - Microsoft Azure.png"></p>
+
+<p align="center"><img src="images/(Before)24hr-windows-rdp-auth-fail - Microsoft Azure.png"></p>
 
 ## Metrics Before Hardening / Security Controls
 
