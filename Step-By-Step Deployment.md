@@ -8,19 +8,19 @@ This project is divided into several parts, starting with the creation of cloud 
 
 ## Table of Contents
 
-- Introduction
+- [Introduction](#Introduction)
 - [Part 1: Azure Setup](#Part-1-Azure-Setup)
   - [Step 1: Creating Subscription and Resource](#Step-1-Creating-Subscription-and-Resource)  
   - [Step 2: Installing Microsoft SQL Server](#Step-2-Installing-Microsoft-SQL-Server)
-  - Step 3: Security Operations
-  - Step 4: Microsoft Entra ID (Azure Active Directory)
-- Part 2: Logging and Monitoring
-  - Step 1: Geo IP Data Ingestion and Microsoft Sentinel Setup
-  - Step 2: Enabling Microsoft Defender for Cloud
-  - Step 3: Log Collection for VMs and Network Security Groups
-  - Step 4: Logging for Microsoft Entra ID and Other Resources
-  - Step 5: Subscription Level Logging (Activity Log)
-  - Step 6: Resource Level Logging
+  - [Step 3: Security Operations](#Step-3-Security-Operations)
+  - [Step 4: Microsoft Entra ID (Azure Active Directory)](#Step-4-Microsoft-Entra-ID-Azure-Active-Directory)
+- [Part 2: Logging and Monitoring](#Part-2-Logging-and-Monitoring)
+  - [Step 1: Geo IP Data Ingestion and Microsoft Sentinel Setup](#Step-1-Geo-IP-Data-Ingestion-and-Microsoft-Sentinel-Setup)
+  - [Step 2: Enabling Microsoft Defender for Cloud](#Step-2-Enabling-Microsoft-Defender-for-Cloud)
+  - [Step 3: Log Collection for VMs and Network Security Groups](#Step-3-Log-Collection-for-VMs-and-Network-Security-Groups)
+  - [Step 4: Logging for Microsoft Entra ID and Other Resources](#Step-4-Logging-for-Microsoft-Entra-ID-and-Other-Resources)
+  - [Step 5: Subscription Level Logging (Activity Log)](#Step-5-Subscription-Level-Logging-Activity-Log)
+  - [Step 6: Resource Level Logging](#Step-6-Resource-Level-Logging)
 - Part 3: Microsoft Sentinel (SIEM)
   - Step 1: World Maps Construction
   - Step 2: Automatic Alert Creation
