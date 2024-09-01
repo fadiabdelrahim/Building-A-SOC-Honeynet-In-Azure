@@ -38,7 +38,7 @@ This project is divided into several parts, starting with the creation of cloud 
 
 ## Part 1: Azure Setup
 
-### Step 1: Creating Subscription and Resource
+### <ins>Step 1: Creating Subscription and Resource</ins>
   - Create our Account (Tenant) and Subscription
     - Create Azure Account (do not user your work or school account)
     - Create Azure Subscription
@@ -54,7 +54,7 @@ This project is divided into several parts, starting with the creation of cloud 
     - Ensure you use a username and password instead for authentication
   - Open Network Security Groups for both VMs
     - Configure Network Security Group (Layer 4 Firewall) to allow all traffic inbound
-### Step 2: Installing Microsoft SQL Server
+### <ins>Step 2: Installing Microsoft SQL Server</ins>
   - Disable Windows Firewall and Install SQL Server and Create Vulnerabilities
     - Remote into to the VM (windows-vm)
     - Turn off Windows Firewall
@@ -65,7 +65,7 @@ This project is divided into several parts, starting with the creation of cloud 
 - Test ping and logging into linux-vm via SSH
   - Ping linux-vm
   - Login to linux-vm
-### Step 3: Security Operations
+### <ins>Step 3: Security Operations</ins>
 - Admin Mode
   - RDP back into windows-vm
   - Inspect the failures and successes (Security Log for RDP, Application log for SQL)
@@ -75,7 +75,19 @@ This project is divided into several parts, starting with the creation of cloud 
       cat /var/logs/auth.log | grep password 
       cat /var/logs/auth.log | grep Accepted
 
-### Step 4: Microsoft Entra ID (Azure Active Directory)
+### <ins>Step 4: Microsoft Entra ID (Azure Active Directory)</ins>
+- Configure Tenant-Level Global Reader
+  - Create a user within Microsoft Entra ID (username: globalreaderjohn)
+    - Assing Tenant-Level Global Reader
+- Configure Subscription Reader
+  - Create another user with Microsoft Entra ID (username: subreaderjane)
+    - Assign Subscription-Level Reader
+- Configure Resource Group Contributor (like an admin)
+  - Create another user within Microsoft Entra ID (username: rgcontributordave)
+    - Assign Resource Group-level Contributor
+    - For resource group (RG-Cyber-Lab), assign Contributor Permissions
+   
+## Part 2: Logging and Monitoring
 
 
 ## Conclusion
