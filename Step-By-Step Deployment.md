@@ -9,7 +9,7 @@ This project is divided into several parts, starting with the creation of cloud 
 ## Table of Contents
 
 - Introduction
-- Part 1: Azure Setup
+- [Part 1: Azure Setup](#Part-1-Azure-Setup)
   - Step 1: Creating Subscription and Resource  
   - Step 2: Installing Microsoft SQL Server
   - Step 3: Security Operations
