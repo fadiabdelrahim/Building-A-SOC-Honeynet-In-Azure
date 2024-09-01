@@ -21,20 +21,20 @@ This project is divided into several parts, starting with the creation of cloud 
   - [Step 4: Logging for Microsoft Entra ID and Other Resources](#Step-4-Logging-for-Microsoft-Entra-ID-and-Other-Resources)
   - [Step 5: Subscription Level Logging (Activity Log)](#Step-5-Subscription-Level-Logging-Activity-Log)
   - [Step 6: Resource Level Logging](#Step-6-Resource-Level-Logging)
-- Part 3: Microsoft Sentinel (SIEM)
-  - Step 1: World Maps Construction
-  - Step 2: Automatic Alert Creation
-  - Step 3: Running the Insecure Environment
-- Part 4: Secure Cloud Configuration
-  - Step 1: Containment and Recovery
-  - Step 2: Regulatory Compliance
-  - Step 3: Securing Resources
-  - Step 4: Running the Secure Environment
-- Part 5: Environment Cleanup
-  - Step 1: Delete Resource Groups
-  - Step 2: Remove Microsoft Entra ID Accounts
-  - Step 3: Deprovision Subscription and Log Analytics Workspace
-- Conclusion    
+- [Part 3: Microsoft Sentinel (SIEM)](#Part-3-Microsoft-Sentinel-SIEM)
+  - [Step 1: World Maps Construction](#Step-1-World-Maps-Construction)
+  - [Step 2: Automatic Alert Creation](#Step-2-Automatic-Alert-Creation)
+  - [Step 3: Running the Insecure Environment](#Step-3-Running-the-Insecure-Environment)
+- [Part 4: Secure Cloud Configuration](#Part-4-Secure-Cloud-Configuration)
+  - [Step 1: Containment and Recovery](#Step-1-Containment-and-Recovery)
+  - [Step 2: Regulatory Compliance](#Step-2-Regulatory-Compliance)
+  - [Step 3: Securing Resources](#Step-3-Securing-Resources)
+  - [Step 4: Running the Secure Environment](#Step-4-Running-the-Secure-Environment)
+- [Part 5: Environment Cleanup](#Part-5-Environment-Cleanup)
+  - [Step 1: Delete Resource Groups](#Step-1-Delete-Resource-Groups)
+  - [Step 2: Remove Microsoft Entra ID Accounts](#Step-2-Remove-Microsoft-Entra-ID-Accounts)
+  - [Step 3: Deprovision Subscription and Log Analytics Workspace](#Step-3-Deprovision-Subscription-and-Log-Analytics-Workspace)
+- [Conclusion](#Conclusion)    
 
 ## <p align="center"> Step-By-Step Deployment
 
@@ -140,20 +140,44 @@ This project is divided into several parts, starting with the creation of cloud 
 
 ## Part 3: Microsoft Sentinel (SIEM)
 
-### Step 1: World Maps Construction
+### <ins>Step 1: World Maps Construction</ins>
 - Within Azure Sentinel create the following workbooks
   - windows-rdp-auth-fail.json – Create the Windows RDP/SMB Authentication Failure map
   - linux-ssh-auth-fail.json – Create the Linux SSH Authentication Failures map
   - mssql-auth-fail.json – Create MS SQL Server Authentication Failures map
   - nsg-malicious-allowed-in.json – Create the NSG Allowed Malicious Inbound
-### Step 2: Automatic Alert Creation
+### <ins>Step 2: Automatic Alert Creation</ins>
 - Import all Sentinel Analytics Rules
-### Step 3: Running the Insecure Environment
+### <ins>Step 3: Running the Insecure Environment</ins>
 - Let the environment sit for 24 hours
 - Count all the alerts that happened in last 24 hours
 
 ## Part 4: Secure Cloud Configuration
 
+### <ins>Step1: Containment and Recovery</ins>
+- Lock down the NSG assigned to the VMs to allow only necessary traffic
+### <ins>Step 2: Regulatory Compliance (Enable NIST 800-53)</ins>
+- Enable MDC Regulatory Compliance (NIST 800-53)
+### <ins>Step 3: Securing Resources (NIST SC-7)</ins>
+- Implement SC-7
+- Configure Azure Private Link and Firewall for Azure Key Vault Instances
+- Configure Azure Private Link and Firewall for Azure Storage Account Instance
+  - Disable Public Access
+- Login to windows-vm and check the IP address of Key Vault and Storage Account Instance
+- Create NSG and attach to subnet
+### <ins>Step 4: Running the Secure Environment</ins> 
+- Let the environment sit for 24 hours
+- Count all the alerts that happened in last 24 hours
+
+## Part 5: Environment Cleanup
+
+### <ins>Step 1: Delete Resource Groups</ins>
+- Delete all resource groups
+### <ins>Step 2: Remove Microsoft Entra ID Accounts</ins>
+- Go to Microsoft Entra ID and delete all accounts
+- In Microsoft Entra ID ensure diagnostic settings have been deleted
+### <ins>Step 3: Deprovision Subscription and Log Analytics Workspace</ins>
+- Go to Microsoft Defender for Cloud -> Environment Settings and deprovision the subscription and Log Analytics Workspace
 
 ## Conclusion
 
