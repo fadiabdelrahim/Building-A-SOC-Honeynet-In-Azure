@@ -126,7 +126,7 @@ This project is divided into several parts, starting with the creation of cloud 
 - Query Log Analytics for logs from the VMs and NSGs
   - Syslog (linux)
   - SecurityEvent (windows)
-  - AzureNetworkAnalytis_CL (NSGs)
+  - AzureNetworkAnalytics_CL (NSGs)
 ### <ins>Step 4: Logging for Microsoft Entra ID and Other Resources</ins>
 - Create Diagnostic Settings to ingest Microsoft Entra ID logs
   - Enable Audit logs and Sign in Logs for Microsoft Entra ID
@@ -138,7 +138,21 @@ This project is divided into several parts, starting with the creation of cloud 
 -  Configure Logging for Key Vault
   -  Create a Key Vault Instance and collect the audit log and send to Log Analytics Workspace
 
-## Part 3: Microsoft Sentinel (SIEM)  
+## Part 3: Microsoft Sentinel (SIEM)
+
+### Step 1: World Maps Construction
+- Within Azure Sentinel create the following workbooks
+  - windows-rdp-auth-fail.json – Create the Windows RDP/SMB Authentication Failure map
+  - linux-ssh-auth-fail.json – Create the Linux SSH Authentication Failures map
+  - mssql-auth-fail.json – Create MS SQL Server Authentication Failures map
+  - nsg-malicious-allowed-in.json – Create the NSG Allowed Malicious Inbound
+### Step 2: Automatic Alert Creation
+- Import all Sentinel Analytics Rules
+### Step 3: Running the Insecure Environment
+- Let the environment sit for 24 hours
+- Count all the alerts that happened in last 24 hours
+
+## Part 4: Secure Cloud Configuration
 
 
 ## Conclusion
