@@ -10,8 +10,8 @@ This project is divided into several parts, starting with the creation of cloud 
 
 - Introduction
 - [Part 1: Azure Setup](#Part-1-Azure-Setup)
-  - Step 1: Creating Subscription and Resource  
-  - Step 2: Installing Microsoft SQL Server
+  - [Step 1: Creating Subscription and Resource](Step-1-Creating-Subscription-and-Resource)  
+  - [Step 2: Installing Microsoft SQL Server](Step-2-Installing-Microsoft-SQL-Server)
   - Step 3: Security Operations
   - Step 4: Microsoft Entra ID (Azure Active Directory)
 - Part 2: Logging and Monitoring
@@ -19,6 +19,8 @@ This project is divided into several parts, starting with the creation of cloud 
   - Step 2: Enabling Microsoft Defender for Cloud
   - Step 3: Log Collection for VMs and Network Security Groups
   - Step 4: Logging for Microsoft Entra ID and Other Resources
+  - Step 5: Subscription Level Logging (Activity Log)
+  - Step 6: Resource Level Logging
 - Part 3: Microsoft Sentinel (SIEM)
   - Step 1: World Maps Construction
   - Step 2: Automatic Alert Creation
@@ -88,6 +90,55 @@ This project is divided into several parts, starting with the creation of cloud 
     - For resource group (RG-Cyber-Lab), assign Contributor Permissions
    
 ## Part 2: Logging and Monitoring
+
+### <ins>Step 1: Geo IP Data Ingestion and Microsoft Sentinel Setup</ins>
+- Add Large Geo-Data Files in Azure Storage
+  - Use geoip-summarized.csv file
+- Create a Log Analytics Workspace (log aggregator) named: LAW-Cyber-Lab
+- Setup Sentinel and connect it to Log Analytics Workspace
+  - Create the geoip watchlist
+    - Name/Alias: geoip
+    - Source type: Local File
+    - Number of lines before row: 0
+    - Search Key: network
+  - Use _GetWatchlist(“geoip”) in Log Analytics Workspace to verify Geo-Data has loaded
+### <ins>Step 2: Enabling Microsoft Defender for Cloud</ins>
+- Enable Microsoft Defender for Cloud for Log Analytics Workspace
+  - Enable Defender Plans for VMs and SQL Instances on VMs
+  - Enable Data Collection (All Events)
+- Enable Microsoft Defender for Cloud for Subscription
+  - VMs, Storage Accounts, Key Vault, SQL Server
+  - Make sure logs are being sent to correct log analytics workspaces
+- Enable Microsoft Defender for Cloud Continuous Export in Environment Settings
+  - Export to the correct Log Analytics Workspace
+### <ins>Step 3: Log Collection for VMs and Network Security Groups</ins>
+- Create Azure Storage Account (sacyberlab01)
+  - Must be in the same region as VMs
+  - This will be used to store the NSG Flow Logs
+- Enable Flow logs for both Network Security Groups (NSGs)
+- Configure Data Collection Rules within our Log Analytics Workspace
+  - Configure Linux Data Sources (auth only)
+    - Linux-vm-logs
+  - Configure Windows Data Sources (Application-information only, Security-All)
+    - Windows-vm-logs
+  - Configure Special Windows Event Data Collection (Defender and Windows Firewall)
+- Manually install the Log Analytics Agent on both windows-vm and linux-vm
+- Query Log Analytics for logs from the VMs and NSGs
+  - Syslog (linux)
+  - SecurityEvent (windows)
+  - AzureNetworkAnalytis_CL (NSGs)
+### <ins>Step 4: Logging for Microsoft Entra ID and Other Resources</ins>
+- Create Diagnostic Settings to ingest Microsoft Entra ID logs
+  - Enable Audit logs and Sign in Logs for Microsoft Entra ID
+### <ins>Step 5: Subscription Level Logging (Activity Log)</ins>
+- Export Azure Activity Logs to Log Analytics Workspace
+### <ins>Step 6: Resource Level Logging</ins>
+- Configure Logging for Azure Storage
+  - Configure logging for storage account by enabling diagnostics settings for blob storage
+-  Configure Logging for Key Vault
+  -  Create a Key Vault Instance and collect the audit log and send to Log Analytics Workspace
+
+## Part 3: Microsoft Sentinel (SIEM)  
 
 
 ## Conclusion
