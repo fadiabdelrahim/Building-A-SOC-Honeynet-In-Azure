@@ -10,8 +10,8 @@ This project is divided into several parts, starting with the creation of cloud 
 
 - Introduction
 - [Part 1: Azure Setup](#Part-1-Azure-Setup)
-  - [Step 1: Creating Subscription and Resource](Step-1-Creating-Subscription-and-Resource)  
-  - [Step 2: Installing Microsoft SQL Server](Step-2-Installing-Microsoft-SQL-Server)
+  - [Step 1: Creating Subscription and Resource](#Step-1-Creating-Subscription-and-Resource)  
+  - [Step 2: Installing Microsoft SQL Server](#Step-2-Installing-Microsoft-SQL-Server)
   - Step 3: Security Operations
   - Step 4: Microsoft Entra ID (Azure Active Directory)
 - Part 2: Logging and Monitoring
