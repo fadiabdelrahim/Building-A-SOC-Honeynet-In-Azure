@@ -433,18 +433,127 @@ This project is divided into several parts, starting with the creation of cloud 
   - linux-ssh-auth-fail.json – Create the Linux SSH Authentication Failures map
   - mssql-auth-fail.json – Create MS SQL Server Authentication Failures map
   - nsg-malicious-allowed-in.json – Create the NSG Allowed Malicious Inbound
+
+<p align="center"><img src="images/Picture271.png"></p>
+<p align="center"><img src="images/Picture272.png"></p>
+<p align="center"><img src="images/Picture273.png"></p>
+<p align="center"><img src="images/Picture274.png"></p>
+<p align="center"><img src="images/Picture275.png"></p>
+<p align="center"><img src="images/Picture276.png"></p>
+<p align="center"><img src="images/Picture277.png"></p>
+<p align="center"><img src="images/Picture278.png"></p>
+<p align="center"><img src="images/Picture279.png"></p>
+<p align="center"><img src="images/Picture280.png"></p>
+<p align="center"><img src="images/Picture281.png"></p>
+<p align="center"><img src="images/Picture282.png"></p>
+<p align="center"><img src="images/Picture283.png"></p>
+<p align="center"><img src="images/Picture284.png"></p>
+<p align="center"><img src="images/Picture285.png"></p>
+<p align="center"><img src="images/Picture286.png"></p>
+<p align="center"><img src="images/Picture287.png"></p>
+<p align="center"><img src="images/Picture288.png"></p>
+<p align="center"><img src="images/Picture289.png"></p>
+<p align="center"><img src="images/Picture290.png"></p>
+<p align="center"><img src="images/Picture291.png"></p>
+<p align="center"><img src="images/Picture292.png"></p>
+<p align="center"><img src="images/Picture293.png"></p>
+<p align="center"><img src="images/Picture294.png"></p>
+<p align="center"><img src="images/Picture295.png"></p>
+<p align="center"><img src="images/Picture296.png"></p>
+<p align="center"><img src="images/Picture297.png"></p>
+<p align="center"><img src="images/Picture298.png"></p>
+<p align="center"><img src="images/Picture299.png"></p>
+<p align="center"><img src="images/Picture300.png"></p>
+<p align="center"><img src="images/Picture301.png"></p>
+<p align="center"><img src="images/Picture302.png"></p>
+<p align="center"><img src="images/Picture303.png"></p>
+<p align="center"><img src="images/Picture304.png"></p>
+<p align="center"><img src="images/Picture305.png"></p>
+<p align="center"><img src="images/Picture306.png"></p>
+<p align="center"><img src="images/Picture307.png"></p>
+<p align="center"><img src="images/Picture308.png"></p>
+<p align="center"><img src="images/Picture309.png"></p>
+<p align="center"><img src="images/Picture310.png"></p>
+<p align="center"><img src="images/Picture311.png"></p>
+
 ### <ins>Step 2: Automatic Alert Creation</ins>
 - Import all Sentinel Analytics Rules
+
+<p align="center"><img src="images/Picture312.png"></p>
+<p align="center"><img src="images/Picture313.png"></p>
+<p align="center"><img src="images/Picture314.png"></p>
+<p align="center"><img src="images/Picture315.png"></p>
+<p align="center"><img src="images/Picture316.png"></p>
+
 ### <ins>Step 3: Running the Insecure Environment</ins>
 - Let the environment sit for 24 hours
 - Count all the alerts that happened in last 24 hours
+
+<p align="center"><img src="images/Picture317.png"></p>
+<p align="center"><img src="images/Picture318.png"></p>
+<p align="center"><img src="images/Picture319.png"></p>
+<p align="center"><img src="images/Picture320.png"></p>
+<p align="center"><img src="images/Picture321.png"></p>
+<p align="center"><img src="images/Picture322.png"></p>
+<p align="center"><img src="images/Picture323.png"></p>
+<p align="center"><img src="images/Picture324.png"></p>
+<p align="center"><img src="images/Picture325.png"></p>
+<p align="center"><img src="images/Picture326.png"></p>
+<p align="center"><img src="images/Picture327.png"></p>
+<p align="center"><img src="images/Picture328.png"></p>
+<p align="center"><img src="images/Picture329.png"></p>
+<p align="center"><img src="images/Picture330.png"></p>
+<p align="center"><img src="images/Picture331.png"></p>
+<p align="center"><img src="images/Picture332.png"></p>
+<p align="center"><img src="images/Picture333.png"></p>
+<p align="center"><img src="images/Picture334.png"></p>
+<p align="center"><img src="images/Picture335.png"></p>
+<p align="center"><img src="images/Picture336.png"></p>
+<p align="center"><img src="images/Picture337.png"></p>
+<p align="center"><img src="images/Picture338.png"></p>
+<p align="center"><img src="images/Picture339.png"></p>
+<p align="center"><img src="images/Picture340.png"></p>
+<p align="center"><img src="images/Picture341.png"></p>
+<p align="center"><img src="images/Picture342.png"></p>
+<p align="center"><img src="images/Picture343.png"></p>
+<p align="center"><img src="images/Picture344.png"></p>
+<p align="center"><img src="images/Picture345.png"></p>
+<p align="center"><img src="images/Picture346.png"></p>
+<p align="center"><img src="images/Picture347.png"></p>
+<p align="center"><img src="images/Picture348.png"></p>
+<p align="center"><img src="images/Picture349.png"></p>
+<p align="center"><img src="images/Picture350.png"></p>
 
 ## Part 4: Secure Cloud Configuration
 
 ### <ins>Step1: Containment and Recovery</ins>
 - Lock down the NSG assigned to the VMs to allow only necessary traffic
+
+<p align="center"><img src="images/Picture351.png"></p>
+<p align="center"><img src="images/Picture352.png"></p>
+<p align="center"><img src="images/Picture353.png"></p>
+<p align="center"><img src="images/Picture354.png"></p>
+<p align="center"><img src="images/Picture355.png"></p>
+<p align="center"><img src="images/Picture356.png"></p>
+<p align="center"><img src="images/Picture357.png"></p>
+<p align="center"><img src="images/Picture358.png"></p>
+<p align="center"><img src="images/Picture359.png"></p>
+<p align="center"><img src="images/Picture360.png"></p>
+<p align="center"><img src="images/Picture361.png"></p>
+<p align="center"><img src="images/Picture362.png"></p>
+
 ### <ins>Step 2: Regulatory Compliance (Enable NIST 800-53)</ins>
 - Enable MDC Regulatory Compliance (NIST 800-53)
+
+<p align="center"><img src="images/Picture363.png"></p>
+<p align="center"><img src="images/Picture364.png"></p>
+<p align="center"><img src="images/Picture365.png"></p>
+<p align="center"><img src="images/Picture366.png"></p>
+<p align="center"><img src="images/Picture367.png"></p>
+<p align="center"><img src="images/Picture368.png"></p>
+<p align="center"><img src="images/Picture369.png"></p>
+<p align="center"><img src="images/Picture370.png"></p>
+
 ### <ins>Step 3: Securing Resources (NIST SC-7)</ins>
 - Implement SC-7
 - Configure Azure Private Link and Firewall for Azure Key Vault Instances
@@ -452,19 +561,94 @@ This project is divided into several parts, starting with the creation of cloud 
   - Disable Public Access
 - Login to windows-vm and check the IP address of Key Vault and Storage Account Instance
 - Create NSG and attach to subnet
+
+<p align="center"><img src="images/Picture371.png"></p>
+<p align="center"><img src="images/Picture372.png"></p>
+<p align="center"><img src="images/Picture373.png"></p>
+<p align="center"><img src="images/Picture374.png"></p>
+<p align="center"><img src="images/Picture375.png"></p>
+<p align="center"><img src="images/Picture376.png"></p>
+<p align="center"><img src="images/Picture377.png"></p>
+<p align="center"><img src="images/Picture378.png"></p>
+<p align="center"><img src="images/Picture379.png"></p>
+<p align="center"><img src="images/Picture380.png"></p>
+<p align="center"><img src="images/Picture381.png"></p>
+<p align="center"><img src="images/Picture382.png"></p>
+<p align="center"><img src="images/Picture383.png"></p>
+<p align="center"><img src="images/Picture384.png"></p>
+<p align="center"><img src="images/Picture385.png"></p>
+<p align="center"><img src="images/Picture386.png"></p>
+<p align="center"><img src="images/Picture387.png"></p>
+<p align="center"><img src="images/Picture388.png"></p>
+<p align="center"><img src="images/Picture389.png"></p>
+<p align="center"><img src="images/Picture390.png"></p>
+<p align="center"><img src="images/Picture391.png"></p>
+<p align="center"><img src="images/Picture392.png"></p>
+<p align="center"><img src="images/Picture393.png"></p>
+<p align="center"><img src="images/Picture394.png"></p>
+<p align="center"><img src="images/Picture395.png"></p>
+<p align="center"><img src="images/Picture396.png"></p>
+<p align="center"><img src="images/Picture397.png"></p>
+<p align="center"><img src="images/Picture398.png"></p>
+<p align="center"><img src="images/Picture399.png"></p>
+<p align="center"><img src="images/Picture400.png"></p>
+<p align="center"><img src="images/Picture401.png"></p>
+<p align="center"><img src="images/Picture402.png"></p>
+<p align="center"><img src="images/Picture403.png"></p>
+<p align="center"><img src="images/Picture404.png"></p>
+<p align="center"><img src="images/Picture405.png"></p>
+<p align="center"><img src="images/Picture406.png"></p>
+<p align="center"><img src="images/Picture407.png"></p>
+
 ### <ins>Step 4: Running the Secure Environment</ins> 
 - Let the environment sit for 24 hours
 - Count all the alerts that happened in last 24 hours
+
+<p align="center"><img src="images/Picture408.png"></p>
+<p align="center"><img src="images/Picture409.png"></p>
+<p align="center"><img src="images/Picture410.png"></p>
+<p align="center"><img src="images/Picture411.png"></p>
+<p align="center"><img src="images/Picture412.png"></p>
+<p align="center"><img src="images/Picture413.png"></p>
+<p align="center"><img src="images/Picture414.png"></p>
+<p align="center"><img src="images/Picture415.png"></p>
 
 ## Part 5: Environment Cleanup
 
 ### <ins>Step 1: Delete Resource Groups</ins>
 - Delete all resource groups
+
+<p align="center"><img src="images/Picture416.png"></p>
+<p align="center"><img src="images/Picture417.png"></p>
+<p align="center"><img src="images/Picture418.png"></p>
+<p align="center"><img src="images/Picture419.png"></p>
+<p align="center"><img src="images/Picture420.png"></p>
+<p align="center"><img src="images/Picture421.png"></p>
+<p align="center"><img src="images/Picture422.png"></p>
+<p align="center"><img src="images/Picture423.png"></p>
+<p align="center"><img src="images/Picture424.png"></p>
+<p align="center"><img src="images/Picture425.png"></p>
+<p align="center"><img src="images/Picture426.png"></p>
+
 ### <ins>Step 2: Remove Microsoft Entra ID Accounts</ins>
 - Go to Microsoft Entra ID and delete all accounts
 - In Microsoft Entra ID ensure diagnostic settings have been deleted
+
+<p align="center"><img src="images/Picture427.png"></p>
+<p align="center"><img src="images/Picture428.png"></p>
+<p align="center"><img src="images/Picture429.png"></p>
+<p align="center"><img src="images/Picture430.png"></p>
+<p align="center"><img src="images/Picture431.png"></p>
+<p align="center"><img src="images/Picture432.png"></p>
+
 ### <ins>Step 3: Deprovision Subscription and Log Analytics Workspace</ins>
 - Go to Microsoft Defender for Cloud -> Environment Settings and deprovision the subscription and Log Analytics Workspace
+
+<p align="center"><img src="images/Picture433.png"></p>
+<p align="center"><img src="images/Picture434.png"></p>
+<p align="center"><img src="images/Picture435.png"></p>
+<p align="center"><img src="images/Picture436.png"></p>
+<p align="center"><img src="images/Picture437.png"></p>
 
 ## Conclusion
 
