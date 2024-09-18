@@ -274,6 +274,30 @@ This project is divided into several parts, starting with the creation of cloud 
     - Number of lines before row: 0
     - Search Key: network
   - Use _GetWatchlist(“geoip”) in Log Analytics Workspace to verify Geo-Data has loaded
+
+<p align="center"><img src="images/Picture167.png"></p>
+<p align="center"><img src="images/Picture168.png"></p>
+<p align="center"><img src="images/Picture169.png"></p>
+<p align="center"><img src="images/Picture170.png"></p>
+<p align="center"><img src="images/Picture171.png"></p>
+<p align="center"><img src="images/Picture172.png"></p>
+<p align="center"><img src="images/Picture173.png"></p>
+<p align="center"><img src="images/Picture174.png"></p>
+<p align="center"><img src="images/Picture175.png"></p>
+<p align="center"><img src="images/Picture176.png"></p>
+<p align="center"><img src="images/Picture177.png"></p>
+<p align="center"><img src="images/Picture178.png"></p>
+<p align="center"><img src="images/Picture179.png"></p>
+<p align="center"><img src="images/Picture180.png"></p>
+<p align="center"><img src="images/Picture181.png"></p>
+<p align="center"><img src="images/Picture182.png"></p>
+<p align="center"><img src="images/Picture183.png"></p>
+<p align="center"><img src="images/Picture184.png"></p>
+<p align="center"><img src="images/Picture185.png"></p>
+<p align="center"><img src="images/Picture186.png"></p>
+<p align="center"><img src="images/Picture187.png"></p>
+<p align="center"><img src="images/Picture188.png"></p>
+
 ### <ins>Step 2: Enabling Microsoft Defender for Cloud</ins>
 - Enable Microsoft Defender for Cloud for Log Analytics Workspace
   - Enable Defender Plans for VMs and SQL Instances on VMs
@@ -283,6 +307,22 @@ This project is divided into several parts, starting with the creation of cloud 
   - Make sure logs are being sent to correct log analytics workspaces
 - Enable Microsoft Defender for Cloud Continuous Export in Environment Settings
   - Export to the correct Log Analytics Workspace
+
+<p align="center"><img src="images/Picture189.png"></p>
+<p align="center"><img src="images/Picture190.png"></p>
+<p align="center"><img src="images/Picture191.png"></p>
+<p align="center"><img src="images/Picture192.png"></p>
+<p align="center"><img src="images/Picture193.png"></p>
+<p align="center"><img src="images/Picture194.png"></p>
+<p align="center"><img src="images/Picture195.png"></p>
+<p align="center"><img src="images/Picture196.png"></p>
+<p align="center"><img src="images/Picture197.png"></p>
+<p align="center"><img src="images/Picture198.png"></p>
+<p align="center"><img src="images/Picture199.png"></p>
+<p align="center"><img src="images/Picture200.png"></p>
+<p align="center"><img src="images/Picture201.png"></p>
+<p align="center"><img src="images/Picture202.png"></p>
+
 ### <ins>Step 3: Log Collection for VMs and Network Security Groups</ins>
 - Create Azure Storage Account (sacyberlab01)
   - Must be in the same region as VMs
@@ -299,16 +339,91 @@ This project is divided into several parts, starting with the creation of cloud 
   - Syslog (linux)
   - SecurityEvent (windows)
   - AzureNetworkAnalytics_CL (NSGs)
+
+<p align="center"><img src="images/Picture203.png"></p>
+<p align="center"><img src="images/Picture204.png"></p>
+<p align="center"><img src="images/Picture205.png"></p>
+<p align="center"><img src="images/Picture206.png"></p>
+<p align="center"><img src="images/Picture207.png"></p>
+<p align="center"><img src="images/Picture208.png"></p>
+<p align="center"><img src="images/Picture209.png"></p>
+<p align="center"><img src="images/Picture210.png"></p>
+<p align="center"><img src="images/Picture211.png"></p>
+<p align="center"><img src="images/Picture212.png"></p>
+<p align="center"><img src="images/Picture213.png"></p>
+<p align="center"><img src="images/Picture214.png"></p>
+<p align="center"><img src="images/Picture215.png"></p>
+<p align="center"><img src="images/Picture216.png"></p>
+<p align="center"><img src="images/Picture217.png"></p>
+<p align="center"><img src="images/Picture218.png"></p>
+<p align="center"><img src="images/Picture219.png"></p>
+<p align="center"><img src="images/Picture220.png"></p>
+<p align="center"><img src="images/Picture221.png"></p>
+<p align="center"><img src="images/Picture222.png"></p>
+<p align="center"><img src="images/Picture223.png"></p>
+<p align="center"><img src="images/Picture224.png"></p>
+<p align="center"><img src="images/Picture225.png"></p>
+<p align="center"><img src="images/Picture226.png"></p>
+<p align="center"><img src="images/Picture227.png"></p>
+<p align="center"><img src="images/Picture228.png"></p>
+<p align="center"><img src="images/Picture229.png"></p>
+<p align="center"><img src="images/Picture230.png"></p>
+<p align="center"><img src="images/Picture231.png"></p>
+<p align="center"><img src="images/Picture232.png"></p>
+<p align="center"><img src="images/Picture233.png"></p>
+<p align="center"><img src="images/Picture234.png"></p>
+<p align="center"><img src="images/Picture235.png"></p>
+<p align="center"><img src="images/Picture236.png"></p>
+<p align="center"><img src="images/Picture237.png"></p>
+<p align="center"><img src="images/Picture238.png"></p>
+<p align="center"><img src="images/Picture239.png"></p>
+<p align="center"><img src="images/Picture240.png"></p>
+<p align="center"><img src="images/Picture241.png"></p>
+<p align="center"><img src="images/Picture242.png"></p>
+<p align="center"><img src="images/Picture243.png"></p>
+<p align="center"><img src="images/Picture244.png"></p>
+<p align="center"><img src="images/Picture245.png"></p>
+
 ### <ins>Step 4: Logging for Microsoft Entra ID and Other Resources</ins>
 - Create Diagnostic Settings to ingest Microsoft Entra ID logs
   - Enable Audit logs and Sign in Logs for Microsoft Entra ID
+
+<p align="center"><img src="images/Picture246.png"></p>
+<p align="center"><img src="images/Picture247.png"></p>
+<p align="center"><img src="images/Picture248.png"></p>
+<p align="center"><img src="images/Picture249.png"></p>
+
 ### <ins>Step 5: Subscription Level Logging (Activity Log)</ins>
 - Export Azure Activity Logs to Log Analytics Workspace
+
+<p align="center"><img src="images/Picture250.png"></p>
+<p align="center"><img src="images/Picture251.png"></p>
+<p align="center"><img src="images/Picture252.png"></p>
+<p align="center"><img src="images/Picture253.png"></p>
+
 ### <ins>Step 6: Resource Level Logging</ins>
 - Configure Logging for Azure Storage
   - Configure logging for storage account by enabling diagnostics settings for blob storage
 -  Configure Logging for Key Vault
   -  Create a Key Vault Instance and collect the audit log and send to Log Analytics Workspace
+
+<p align="center"><img src="images/Picture254.png"></p>
+<p align="center"><img src="images/Picture255.png"></p>
+<p align="center"><img src="images/Picture256.png"></p>
+<p align="center"><img src="images/Picture257.png"></p>
+<p align="center"><img src="images/Picture258.png"></p>
+<p align="center"><img src="images/Picture259.png"></p>
+<p align="center"><img src="images/Picture260.png"></p>
+<p align="center"><img src="images/Picture261.png"></p>
+<p align="center"><img src="images/Picture262.png"></p>
+<p align="center"><img src="images/Picture263.png"></p>
+<p align="center"><img src="images/Picture264.png"></p>
+<p align="center"><img src="images/Picture265.png"></p>
+<p align="center"><img src="images/Picture266.png"></p>
+<p align="center"><img src="images/Picture267.png"></p>
+<p align="center"><img src="images/Picture268.png"></p>
+<p align="center"><img src="images/Picture269.png"></p>
+<p align="center"><img src="images/Picture270.png"></p>
 
 ## Part 3: Microsoft Sentinel (SIEM)
 
