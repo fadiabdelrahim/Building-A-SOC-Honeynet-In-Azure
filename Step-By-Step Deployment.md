@@ -56,6 +56,64 @@ This project is divided into several parts, starting with the creation of cloud 
     - Ensure you use a username and password instead for authentication
   - Open Network Security Groups for both VMs
     - Configure Network Security Group (Layer 4 Firewall) to allow all traffic inbound
+   
+<p align="center"><img src="images/Picture1.png"></p>
+<p align="center"><img src="images/Picture2.png"></p>
+<p align="center"><img src="images/Picture3.png"></p>
+<p align="center"><img src="images/Picture4.png"></p>
+<p align="center"><img src="images/Picture5.png"></p>
+<p align="center"><img src="images/Picture6.png"></p>
+<p align="center"><img src="images/Picture7.png"></p>
+<p align="center"><img src="images/Picture8.png"></p>
+<p align="center"><img src="images/Picture9.png"></p>
+<p align="center"><img src="images/Picture10.png"></p>
+<p align="center"><img src="images/Picture11.png"></p>
+<p align="center"><img src="images/Picture12.png"></p>
+<p align="center"><img src="images/Picture13.png"></p>
+<p align="center"><img src="images/Picture14.png"></p>
+<p align="center"><img src="images/Picture15.png"></p>
+<p align="center"><img src="images/Picture16.png"></p>
+<p align="center"><img src="images/Picture17.png"></p>
+<p align="center"><img src="images/Picture18.png"></p>
+<p align="center"><img src="images/Picture19.png"></p>
+<p align="center"><img src="images/Picture20.png"></p>
+<p align="center"><img src="images/Picture21.png"></p>
+<p align="center"><img src="images/Picture22.png"></p>
+<p align="center"><img src="images/Picture23.png"></p>
+<p align="center"><img src="images/Picture24.png"></p>
+<p align="center"><img src="images/Picture25.png"></p>
+<p align="center"><img src="images/Picture26.png"></p>
+<p align="center"><img src="images/Picture27.png"></p>
+<p align="center"><img src="images/Picture28.png"></p>
+<p align="center"><img src="images/Picture29.png"></p>
+<p align="center"><img src="images/Picture30.png"></p>
+<p align="center"><img src="images/Picture31.png"></p>
+<p align="center"><img src="images/Picture32.png"></p>
+<p align="center"><img src="images/Picture33.png"></p>
+<p align="center"><img src="images/Picture34.png"></p>
+<p align="center"><img src="images/Picture35.png"></p>
+<p align="center"><img src="images/Picture36.png"></p>
+<p align="center"><img src="images/Picture37.png"></p>
+<p align="center"><img src="images/Picture38.png"></p>
+<p align="center"><img src="images/Picture39.png"></p>
+<p align="center"><img src="images/Picture40.png"></p>
+<p align="center"><img src="images/Picture41.png"></p>
+<p align="center"><img src="images/Picture42.png"></p>
+<p align="center"><img src="images/Picture43.png"></p>
+<p align="center"><img src="images/Picture44.png"></p>
+<p align="center"><img src="images/Picture45.png"></p>
+<p align="center"><img src="images/Picture46.png"></p>
+<p align="center"><img src="images/Picture47.png"></p>
+<p align="center"><img src="images/Picture48.png"></p>
+<p align="center"><img src="images/Picture49.png"></p>
+<p align="center"><img src="images/Picture50.png"></p>
+<p align="center"><img src="images/Picture51.png"></p>
+<p align="center"><img src="images/Picture52.png"></p>
+<p align="center"><img src="images/Picture53.png"></p>
+<p align="center"><img src="images/Picture54.png"></p>
+<p align="center"><img src="images/Picture55.png"></p>
+<p align="center"><img src="images/Picture56.png"></p>
+
 ### <ins>Step 2: Installing Microsoft SQL Server</ins>
   - Disable Windows Firewall and Install SQL Server and Create Vulnerabilities
     - Remote into to the VM (windows-vm)
@@ -67,6 +125,70 @@ This project is divided into several parts, starting with the creation of cloud 
 - Test ping and logging into linux-vm via SSH
   - Ping linux-vm
   - Login to linux-vm
+
+<p align="center"><img src="images/Picture57.png"></p>
+<p align="center"><img src="images/Picture58.png"></p>
+<p align="center"><img src="images/Picture59.png"></p>
+<p align="center"><img src="images/Picture60.png"></p>
+<p align="center"><img src="images/Picture61.png"></p>
+<p align="center"><img src="images/Picture62.png"></p>
+<p align="center"><img src="images/Picture63.png"></p>
+<p align="center"><img src="images/Picture64.png"></p>
+<p align="center"><img src="images/Picture65.png"></p>
+<p align="center"><img src="images/Picture66.png"></p>
+<p align="center"><img src="images/Picture67.png"></p>
+<p align="center"><img src="images/Picture68.png"></p>
+<p align="center"><img src="images/Picture69.png"></p>
+<p align="center"><img src="images/Picture70.png"></p>
+<p align="center"><img src="images/Picture71.png"></p>
+<p align="center"><img src="images/Picture72.png"></p>
+<p align="center"><img src="images/Picture73.png"></p>
+<p align="center"><img src="images/Picture74.png"></p>
+<p align="center"><img src="images/Picture75.png"></p>
+<p align="center"><img src="images/Picture76.png"></p>
+<p align="center"><img src="images/Picture77.png"></p>
+<p align="center"><img src="images/Picture78.png"></p>
+<p align="center"><img src="images/Picture79.png"></p>
+<p align="center"><img src="images/Picture80.png"></p>
+<p align="center"><img src="images/Picture81.png"></p>
+<p align="center"><img src="images/Picture82.png"></p>
+<p align="center"><img src="images/Picture83.png"></p>
+<p align="center"><img src="images/Picture84.png"></p>
+<p align="center"><img src="images/Picture85.png"></p>
+<p align="center"><img src="images/Picture86.png"></p>
+<p align="center"><img src="images/Picture87.png"></p>
+<p align="center"><img src="images/Picture88.png"></p>
+<p align="center"><img src="images/Picture89.png"></p>
+<p align="center"><img src="images/Picture90.png"></p>
+<p align="center"><img src="images/Picture91.png"></p>
+<p align="center"><img src="images/Picture92.png"></p>
+<p align="center"><img src="images/Picture93.png"></p>
+<p align="center"><img src="images/Picture94.png"></p>
+<p align="center"><img src="images/Picture95.png"></p>
+<p align="center"><img src="images/Picture96.png"></p>
+<p align="center"><img src="images/Picture97.png"></p>
+<p align="center"><img src="images/Picture98.png"></p>
+<p align="center"><img src="images/Picture99.png"></p>
+<p align="center"><img src="images/Picture100.png"></p>
+<p align="center"><img src="images/Picture101.png"></p>
+<p align="center"><img src="images/Picture102.png"></p>
+<p align="center"><img src="images/Picture103.png"></p>
+<p align="center"><img src="images/Picture104.png"></p>
+<p align="center"><img src="images/Picture105.png"></p>
+<p align="center"><img src="images/Picture106.png"></p>
+<p align="center"><img src="images/Picture107.png"></p>
+<p align="center"><img src="images/Picture108.png"></p>
+<p align="center"><img src="images/Picture109.png"></p>
+<p align="center"><img src="images/Picture110.png"></p>
+<p align="center"><img src="images/Picture111.png"></p>
+<p align="center"><img src="images/Picture112.png"></p>
+<p align="center"><img src="images/Picture113.png"></p>
+<p align="center"><img src="images/Picture114.png"></p>
+<p align="center"><img src="images/Picture115.png"></p>
+<p align="center"><img src="images/Picture116.png"></p>
+<p align="center"><img src="images/Picture117.png"></p>
+<p align="center"><img src="images/Picture118.png"></p>
+
 ### <ins>Step 3: Security Operations</ins>
 - Admin Mode
   - RDP back into windows-vm
@@ -76,6 +198,21 @@ This project is divided into several parts, starting with the creation of cloud 
     
       cat /var/logs/auth.log | grep password 
       cat /var/logs/auth.log | grep Accepted
+
+<p align="center"><img src="images/Picture119.png"></p>
+<p align="center"><img src="images/Picture120.png"></p>
+<p align="center"><img src="images/Picture121.png"></p>
+<p align="center"><img src="images/Picture122.png"></p>
+<p align="center"><img src="images/Picture123.png"></p>
+<p align="center"><img src="images/Picture124.png"></p>
+<p align="center"><img src="images/Picture125.png"></p>
+<p align="center"><img src="images/Picture126.png"></p>
+<p align="center"><img src="images/Picture127.png"></p>
+<p align="center"><img src="images/Picture128.png"></p>
+<p align="center"><img src="images/Picture129.png"></p>
+<p align="center"><img src="images/Picture130.png"></p>
+<p align="center"><img src="images/Picture131.png"></p>
+<p align="center"><img src="images/Picture132.png"></p>
 
 ### <ins>Step 4: Microsoft Entra ID (Azure Active Directory)</ins>
 - Configure Tenant-Level Global Reader
@@ -88,6 +225,41 @@ This project is divided into several parts, starting with the creation of cloud 
   - Create another user within Microsoft Entra ID (username: rgcontributordave)
     - Assign Resource Group-level Contributor
     - For resource group (RG-Cyber-Lab), assign Contributor Permissions
+
+<p align="center"><img src="images/Picture133.png"></p>
+<p align="center"><img src="images/Picture134.png"></p>
+<p align="center"><img src="images/Picture135.png"></p>
+<p align="center"><img src="images/Picture136.png"></p>
+<p align="center"><img src="images/Picture137.png"></p>
+<p align="center"><img src="images/Picture138.png"></p>
+<p align="center"><img src="images/Picture139.png"></p>
+<p align="center"><img src="images/Picture140.png"></p>
+<p align="center"><img src="images/Picture141.png"></p>
+<p align="center"><img src="images/Picture142.png"></p>
+<p align="center"><img src="images/Picture143.png"></p>
+<p align="center"><img src="images/Picture144.png"></p>
+<p align="center"><img src="images/Picture145.png"></p>
+<p align="center"><img src="images/Picture146.png"></p>
+<p align="center"><img src="images/Picture147.png"></p>
+<p align="center"><img src="images/Picture148.png"></p>
+<p align="center"><img src="images/Picture149.png"></p>
+<p align="center"><img src="images/Picture150.png"></p>
+<p align="center"><img src="images/Picture151.png"></p>
+<p align="center"><img src="images/Picture152.png"></p>
+<p align="center"><img src="images/Picture153.png"></p>
+<p align="center"><img src="images/Picture154.png"></p>
+<p align="center"><img src="images/Picture155.png"></p>
+<p align="center"><img src="images/Picture156.png"></p>
+<p align="center"><img src="images/Picture157.png"></p>
+<p align="center"><img src="images/Picture158.png"></p>
+<p align="center"><img src="images/Picture159.png"></p>
+<p align="center"><img src="images/Picture160.png"></p>
+<p align="center"><img src="images/Picture161.png"></p>
+<p align="center"><img src="images/Picture162.png"></p>
+<p align="center"><img src="images/Picture163.png"></p>
+<p align="center"><img src="images/Picture164.png"></p>
+<p align="center"><img src="images/Picture165.png"></p>
+<p align="center"><img src="images/Picture166.png"></p>
    
 ## Part 2: Logging and Monitoring
 
